@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(/images/WallpaperLlama.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+#menu a {
+    font-size: 18px;
+    color: white;
+}
+.navbar img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.dropdown-menu{
+  min-width: 4rem;
+  margin-left: 20px;
+}

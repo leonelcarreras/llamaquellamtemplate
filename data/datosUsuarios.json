@@ -1,0 +1,127 @@
+[
+ {
+  "id": 1,
+  "nombre": "Charlena",
+  "apellido": "Farley",
+  "email": "cfarley0@businesswire.com",
+  "password": "3Ch0NVJKkM"
+ },
+ {
+  "id": 2,
+  "nombre": "Lana",
+  "apellido": "Abramchik",
+  "email": "labramchik1@sciencedirect.com",
+  "password": "twUec6a9dCO"
+ },
+ {
+  "id": 3,
+  "nombre": "Coralyn",
+  "apellido": "Fransman",
+  "email": "cfransman2@wufoo.com",
+  "password": "Tkn0J6s"
+ },
+ {
+  "id": 4,
+  "nombre": "Sonnnie",
+  "apellido": "Ullock",
+  "email": "sullock3@topsy.com",
+  "password": "ait0ZvZQJV"
+ },
+ {
+  "id": 5,
+  "nombre": "Moss",
+  "apellido": "Byard",
+  "email": "mbyard4@who.int",
+  "password": "vN2GlSmJ"
+ },
+ {
+  "id": 6,
+  "nombre": "Bianka",
+  "apellido": "Tewes",
+  "email": "btewes5@cmu.edu",
+  "password": "VID976Bw"
+ },
+ {
+  "id": 7,
+  "nombre": "Nicolai",
+  "apellido": "Minchinden",
+  "email": "nminchinden6@wisc.edu",
+  "password": "ypNJzCd"
+ },
+ {
+  "id": 8,
+  "nombre": "Miles",
+  "apellido": "Cavee",
+  "email": "mcavee7@gizmodo.com",
+  "password": "78Hu8VtA"
+ },
+ {
+  "id": 9,
+  "nombre": "Lyndsay",
+  "apellido": "Woodhouse",
+  "email": "lwoodhouse8@photobucket.com",
+  "password": "KlCXHeRspUYE"
+ },
+ {
+  "id": 10,
+  "nombre": "Hendrick",
+  "apellido": "Coping",
+  "email": "hcoping9@google.ca",
+  "password": "RHv9pldcA8On"
+ },
+ {
+  "id": 11,
+  "nombre": "Tomas Augusto",
+  "apellido": "Cevasco",
+  "email": "Tom9@gmail.com",
+  "password": "$2a$10$K4GFUiw6bHh7GFVouUgVo./V4jNhiNpokrCKbYr6fguKw3SldYv.C"
+ },
+ {
+  "id": 12,
+  "nombre": "Leo",
+  "apellido": "Carreras",
+  "email": "leocarrerassteam@hotmail.com"
+ },
+ {
+  "id": 13,
+  "nombre": "useradmin",
+  "apellido": "admin",
+  "email": "useradmin@hotmail.com",
+  "category": "admin",
+  "image": "Defaultimage.png"
+ },
+ {
+  "id": 14,
+  "nombre": "prueba13",
+  "apellido": "1313",
+  "email": "prueba13@hotmail.com",
+  "category": "admin",
+  "image": "Defaultimage.png"
+ },
+ {
+  "id": 15,
+  "nombre": "leocarreras",
+  "apellido": "leocarreras",
+  "email": "leocarreras@hotmail.com",
+  "password": "$2a$10$looOa4Pi3eN0TGUhqM9Qvun68WJEcOROfPmOLW5nGJ7kbhQKLohoW",
+  "category": "user",
+  "image": "Defaultimage.png"
+ },
+ {
+  "id": 16,
+  "nombre": "leonel123",
+  "apellido": "nashe",
+  "email": "leonel123@hotmail.com",
+  "category": "user",
+  "image": "Defaultimage.png"
+ },
+ {
+  "id": 17,
+  "nombre": "admin123",
+  "apellido": "admin123",
+  "email": "admin123@hotmail.com",
+  "password": "$2a$10$6erm..pVUda8hAYoEajxRuHFtDJ3rHzRmM.ftALr.ndxHruYICMZe",
+  "category": "user",
+  "image": "Defaultimage.png"
+ }
+]

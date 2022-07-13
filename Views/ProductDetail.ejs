@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<%- include("./partials/head") %>
+
+    <body class="productDetail">
+        <!-- Header -->
+        <%- include("./partials/header") %>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <% productDetail.forEach(product => {
+                 
+            %> 
+
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div class="img-container">
+                                <img id="imageBox" src="/images/products/<%-product.imagecolor1%>" alt="S22" class ="product_img1"/>
+                                <div class = "product-small-img">
+                                        <img src="/images/products/<%-product.imagecolor1%>" onclick="myFuction(this)">
+                                        <img src="/images/products/<%-product.imagecolor2%>" onclick="myFuction(this)">
+                                        <img src="/images/products/<%-product.imagecolor3%>" onclick="myFuction(this)">
+                                </div>
+                                <script type="text/javascript">
+                                    function myFuction(smallImg){
+                                        var fullImg=document.getElementById("imageBox");
+                                        fullImg.src=smallImg.src; 
+                                    }
+                                </script>
+                            </div>
+                                
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-6">
+                            <h3 class="card-title"><%-product.modelo%></h3>
+                            <h4 class="box-title mt-5">Descripción del producto</h4>
+                            <p><%-product.description%></p>
+                            <h2 class="mt-5">
+                                $<%-product.price%>
+                            </h2>
+                            <a href="/products/editarProducto/<%-product.id%>">
+                            <button class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Add to cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                  </svg>
+                            </button>
+                            </a>
+                            <button class="btn btn-primary btn-rounded">Comprar</button>
+                            <h3 class="box-title mt-5">Puntos Clave</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-check text-success"></i>Producto nuevo</li>
+                                <li><i class="fa fa-check text-success"></i>La mejor calidad</li>
+                                <li><i class="fa fa-check text-success"></i>Garantía de por vida</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h3 class="box-title mt-5">Detalles del producto</h3>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-product">
+                                    <tbody>
+                                        <tr>
+                                            <td width="390">Resolución de camara</td>
+                                            <td><%-product.camaraResolucion%></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Resolución de video</td>
+                                            <td><%-product.videoResolucion%></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Memoria</td>
+                                            <td><%-product.memoria%></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Almacenamiennto</td>
+                                            <td><%-product.almacenamiento%></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Procesador</td>
+                                            <td><%-product.procesador%></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Modelo de pantalla</td>
+                                            <td><%-product.pantallaModelo%></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Resolución de pantalla</td>
+                                            <td><%-product.pantallaResolucion%></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bateria</td>
+                                            <td><%-product.bateria%></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% });	%>
+</body>
+
+<!--Footer-->
+<%- include("./partials/footer") %>
+</html>

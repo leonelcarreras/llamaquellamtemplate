@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<%- include("./partials/head") %>
+
+    <body class="productDetail">
+        <!-- Heder -->
+        <%- include("./partials/header") %>
+
+        
+
+    <section class="banner">
+      
+    </section>
+    <main class="productDetail">
+       
+            <section class="last-visit">
+               
+              <div class="container">
+                
+                <% productDetail.forEach(product => {
+                 
+                    %> 
+                     <div class="products">
+                        <div class="img-container">
+                        <img id="imageBox" src="/images/products/<%-product.imagecolor1%>" alt="S22" class ="product_img1"/>
+                        </div>
+                        <div class = "product-small-img">
+                            <img src="/images/products/<%-product.imagecolor1%>" onclick="myFuction(this)">
+                            <img src="/images/products/<%-product.imagecolor2%>" onclick="myFuction(this)">
+                            <img src="/images/products/<%-product.imagecolor3%>" onclick="myFuction(this)">
+                      </div>
+                      <script type="text/javascript">
+                          function myFuction(smallImg){
+                              var fullImg=document.getElementById("imageBox");
+                              fullImg.src=smallImg.src; 
+                          }
+                      </script>
+                    
+                        <div class="especificacion">
+                        <p class="modelo"> Especificacion Tecnica</p>
+                        <p class="modelo"> <%-product.modelo%> </p>
+                        <p class="Procesador"><i class="fas fa-microchip"></i></p>
+                         <p class="tipo"> <%-product.procesador%></p>
+                         <p class="Procesador"><i class="fas fa-mobile"></i></p>
+                         <p class="amoled"><%-product.pantallaModelo%></p>
+                         <p class="resolucion"><%-product.pantallaResolucion%></p>
+                         <p class="Procesador"><i class="fas fa-camera-retro"></i></p>
+                         <p class="camara"> Camera Resolution (Multiple):
+                            <%-product.camaraResolucion%></p>
+                        <p class="camara"> Video Recording Resolution
+                            <%-product.videoResolucion%></p>
+                        <p class="Procesador"><i class="fas fa-sd-card"></i></p>
+                        <p class="memoria"> Memoria: <%-product.memoria%></p>
+                        <p class="almacenamiento">Almacenamiento: <%-product.almacenamiento%></p>
+                        <p class="Procesador"><i class="fas fa-battery-full"></i></p>
+                        <p class="memoria"><%-product.bateria%></p>
+                        <div class="precio">
+                            <p class="Procesador">PRECIO</p>
+                        <p class="precio2">$<%-product.price %></p>
+                        
+                        <center>
+                        <input class="btn btn-success" type="submit" value="Comprar">
+                        </center>
+
+
+
+                        <center>
+                        <a href="/products">
+                        <button class ="btn btn-danger" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+                              </svg>
+                            Volver a tienda
+                        </button>
+                        </a>
+                        </center>
+
+                        </form>
+                         </div>
+                        <div class="edicionProducto">
+                        <form action="/products/editarProducto/<%-product.id%>">
+                        <button class ="btn btn-dark" type="submit">Editar producto</button>
+                        </form>
+                        <form action="/products/<%=product.id %>?_method=DELETE" method ="POST" style="display: inline-flex">
+                        <button type="submit" class ="btn btn-dark" >Eliminar producto</button>
+                        </form>
+                         </div>
+                        </div>
+                    </div>
+
+                    <% });	%>
+                         </section>   
+            <!-- <footer >
+                     
+                         <div class="container-footer">
+                             <div class="copyright">
+                             Copyright © 1999-2022
+                             </div>
+                             <div class="information">
+                               <a>Seguinos:</a><a href="http://twitter.com" TARGET="_blank"><i class="fab fa-twitter"></i></a> | <a href="http://facebook.com" TARGET="_blank"><i class="fab fa-facebook"></i></a> | <a href="http://instagram.com" TARGET="_blank"><i class="fab fa-instagram"></i></a>
+                             </div>
+                         </div>        
+                 </div> 
+             </footer> -->
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<%- include("./partials/head") %>
+<body>
+  
+
+    <%- include("./partials/header") %>
+
+    
+
+    <div class="container d-flex justify-content-center">
+        <div class="card border-0 shadow my-5">
+          <div class="card-body p-5">
+            <%  productToEdit.forEach(product => {
+                   
+            %> 
+            
+        <form action="/products/editarProducto/<%=product.id%>?_method=PATCH" method="post" enctype="multipart/form-data" >
+
+            <section class="header-formulario">
+      <div class="titulo">Estas editando el producto <%=product.name%> <%=product.modelo%></div>
+
+          <% });	%>
+
+
+                   </section>
+          
+            <div>              
+                        
+            <label for="marca"></label>    
+           
+            <select class="form-select" aria-label="Default select example" id="marca" name="marca">
+                <option disabled selected>Marca</option>
+                <option value="Huawei">Huawei</option>
+                <option value="LG">LG</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Samsung">Samsung</option>
+              </select>
+                         
+       </div>
+
+
+            <div class="mb-3">
+                <label for="Modelo" class="form-label"></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Modelo" required>
+            </div>
+
+
+            <div class="mb-3">
+                    <label for="Procesador" class="form-label"></label>
+                    <input type="text" name="procesador" class="form-control" placeholder="Procesador" required>
+            </div>    
+
+
+            <div class="mb-3">
+                <label for="camara" class="form-label"></label>
+                <input type="text" name="camaraResolucion" class="form-control" placeholder="Resolucion de Cámara" required>
+            </div>    
+
+
+
+            <div class="mb-3">
+                <label for="video" class="form-label"></label>
+                <input type="text" name="videoResolucion" class="form-control" placeholder="Resolucion de Video" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="pantalla" class="form-label"></label>
+                <input type="text" name="pantallaModelo" class="form-control" placeholder="Pantalla" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="pantallaResolucion" class="form-label"></label>
+                <input type="text" name="pantallaResolucion" class="form-control" placeholder="Resolución de Pantalla" required>
+            </div>
+
+            <div class="mb-3">
+                <input type="number" class="form-control" id="price" placeholder="Precio" name="price">
+              </div>
+
+
+
+
+
+      
+                         
+                    <select class="form-select" aria-label="Default select example" id="" name="memoria" required>
+                        <option disabled selected>Memoria</option>
+                        <option value="8GB">8GB</option>
+                        <option value="16GB">16GB</option>
+                        <option value="32GB">32GB</option>
+                        <option value="64GB">64GB</option>
+
+                      </select>
+ 
+
+
+
+
+                      <select name="almacenamiento" 
+                      class="form-select" required
+                      id="">Almacenamiento<option disabled selected>Almacenamiento</option>
+                      <option value="64GB">64GB</option>
+                         <option value="128GB">128GB</option>
+                         <option value="256GB">256GB</option>
+                         <option value="512GB">512GB</option>
+      </select>   
+
+      <select name="bateria" 
+                      class="form-select"
+                      id="">Bateria<option disabled selected>Batería</option>
+                      <option value="3.000 mAh">3.000 mAh</option>
+                         <option value="3.000 mAh">3.500 mAh</option>
+                         <option value="3.000 mAh">4.000 mAh</option>
+                         <option value="3.000 mAh">4.500 mAh</option>
+                         <option value="3.000 mAh">5.000 mAh</option>
+                         <option value="3.000 mAh">5.500 mAh</option>
+                         <option value="3.000 mAh">6.000 mAh</option>
+      </select> 
+
+      
+      
+      </div>
+      
+      
+
+
+      <center>
+           <h2> Imágenes del Producto</h2>
+           <div>
+            <label for="formFileLg" class="form-label">Imagen 1</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file" name="imagecolor1">
+          </div>
+           <div>
+            <label for="formFileLg" class="form-label">Imagen 2</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file" name="imagecolor2">
+          </div>
+           <div>
+            <label for="formFileLg" class="form-label">Imagen 3</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file" name="imagecolor3">
+          </div>
+
+
+            <div class="mb-3">
+                        <label for="Descripcion" class="form-label"></label>
+                        <textarea name="descripcion" class="form-control" id="exampleFormControlTextarea1" cols="30" rows="20" required placeholder="Ingrese descripción del producto"></textarea>
+                    </div>
+
+            <button type="submit" class="btn btn-success">Guardar</button>
+            <a href="/">
+                <button type="button" class="btn btn-primary">Volver al Inicio</button>
+            </a>
+         </center> 
+
+
+                                   
+         </form>
+                              
+                          
+                          
+          </main>
+
+
+          </div>
+        </div>
+      </div>
+
+    
+
+    </body>
+   
+    </html>

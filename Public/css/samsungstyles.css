@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #1b1b1b;
+  opacity: 0.9;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  position: fixed;
+}
+body {
+  background-color: #dadada;;
+}
+header .header-bar {
+  display: flex;
+  width: 100vw;
+  height: 56px;
+  padding: 8px 16px;
+}
+
+.Procesador {
+  margin: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+
+
+.productDetail body {
+  font-family: "Roboto", sans-serif;
+  background-color: #dadada;;
+}
+
+.productDetail h3 {
+  font-size: 24px;
+}
+
+.productDetail p {
+  font-size: 15px;
+  text-align:center;
+
+}
+
+div.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.productDetail .main-article {
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.productDetail .discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.productDetail .description {
+  color: #666;
+}
+.productDetail .description {
+  display: none;
+  margin-top: 20px;
+}
+
+.productDetail section.banner img {
+  width: 100%;
+  display: flex;
+}
+
+
+.productDetail main {
+  width: 90%;
+  margin: 0 auto;
+}
+.productDetail main section .products img {
+  width: 100%;
+}
+.productDetail .container {
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.productDetail .products {
+border: 1px solid #ccc;
+padding: 20px;
+background-color: #ffffff;
+display: flex;
+align-items: center;
+margin-top: 50px;
+}
+
+
+.productDetail .product-small-img img{
+  
+  display: flex;
+  width: 20%;
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 8px;
+  margin: 10px 10px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+ 
+}
+
+.productDetail .product-small-img {
+  width: 20%;
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  
+}
+
+.productDetail .img-container img {
+  height: 100%;
+}
+.productDetail .img-container {
+  padding: 10px;
+  width: 100%;
+}
+
+.productDetail .product_img1 {
+  display: flex-end;
+
+}
+
+.productDetail .especificacion {
+  display: flex-end;
+  width: 80%;
+  margin: 30px;
+}
+
+.productDetail .modelo {
+  font-weight: bold;
+  font-size: 20px;
+}
+.productDetail .Procesador {
+  text-decoration: underline;
+  color: #000000;
+  font-size: 20px;
+}
+
+.productDetail .price {
+  font-size: 18px;
+}
+
+.productDetail .precio {
+  border: 2px solid rgba(6, 6, 6, 0.2);
+  padding: 8px;
+  margin: 10px 10px 15px;
+  font-family: Arial, Helvetica, Sans-serif;
+  color: white;
+  font-size: 12px;
+  border-radius: 25px;
+}
+.productDetail .precio2 {
+ 
+  
+  margin: 10px 10px 15px;
+  font-family: Arial, Helvetica, Sans-serif;
+  color: rgb(0, 0, 0);
+
+  font-size: 200%;
+}
+
+
+
+.productDetail .product_img1 {
+  width: 10%;
+}
+
+
+
+.productDetail footer {
+  width: 100%;
+  background: #ebebeb;
+  color: #000;
+}
+
+
+
+.productDetail .container-body {
+  display: flex;
+}
+
+.productDetail .container-footer {
+  width: 100%;
+  background: #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.productDetail .copyrigth {
+  color: #c7c7c7;
+}
+
+.productDetail .copyrigth a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.productDetail .information {
+  text-decoration: none;
+  color: rgb(1, 1, 1);
+}
+
+
+.edicionProducto {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.com{
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 10px;
+  height: 2.5vh;
+  background-color: #060606;
+  color: #fff;
+  width: 40vw;
+  flex-wrap: flex;
+  max-width: 120px;
+}
+
+
+.com2{
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 10px;
+  height: 2.5vh;
+  background-color: #6b6b6b;
+  color: #fff;
+  width: 40vw;
+  flex-wrap: flex;
+  max-width: 130px;
+}
+
+
+
+/*dispositivos desde 316px*/
+@media (max-width: 361px) {
+  .productDetail .description {
+    display: block;
+   
+  }
+  .productDetail .products {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    flex-wrap: wrap;
+  }
+
+  .productDetail .Novedades {
+    color: #837d7d;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .productDetail .products {
+    margin-top: 50px;
+  }
+  .productDetail .product-small-img{
+  
+      display: flex;
+      width: 33%;
+      padding: 8px;
+      margin: 10px -10px 10px;
+      cursor: pointer;
+      flex-direction:row;
+    } 
+    
+}
